@@ -1,0 +1,21 @@
+Program:-
+H=30
+C=50
+temp=[]
+l = list(map(int,input().strip().split(',')))
+for i in l:
+    Q=pow((2*C*i)/H,0.5)
+    temp.append(int(Q))
+print((',').join(map(str,temp)))
+
+Description:-
+Write a program that calculates and prints the value according to the given formula: Q = Square root of [(2 * C * D)/H]. 
+Following are the fixed values of C and H: C is 50. H is 30. D is the variable whose values should be input to your program in a comma-separated sequence.
+
+Example
+Let us assume the following comma separated input sequence is given to the program:
+Input
+100,150,180
+output
+18,22,24
+
