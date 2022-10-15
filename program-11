@@ -1,0 +1,34 @@
+Program:-
+def inp(l):
+    s=input()
+    if s=='-1':
+        return l
+    else:
+        l.append(s)
+        return inp(l)
+def maxi(result):
+    temp = ''
+    for i in l:
+        if len(i)>len(temp):
+            temp = i
+    return temp
+
+        
+s = input()
+l=[]
+if s=='-1':
+    print("No string given")
+else:
+    l.append(s)
+    result = inp(l)
+    for i in range(l.count(maxi(result))):
+        print(maxi(result),end=" ")
+        
+"""Description:-
+Define a function that can accept n strings as input and print the string with maximum length in console.
+The code will get n values until and unless the user enters -1.
+Sample input:
+Hello
+Everyone
+Sample output:
+Everyone"""
