@@ -1,0 +1,18 @@
+program:-
+l=[]
+n = int(input())
+if n==-1:
+    print("invalid input")
+else:
+    l.append(str(n))
+    while True:
+        n = int(input())
+        if n==-1:
+            break
+        else:
+            l.append(str(n))
+for i in l:
+    print(type(i),i)
+    
+"""Description:-
+Define a function that can convert an integer into a string and print it in the console. The user will give n values until and unless the user enters -1."""
