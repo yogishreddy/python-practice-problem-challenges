@@ -1,0 +1,19 @@
+program:-
+s = int(input())
+e=int(input())
+l=[]
+for i in range(s+1,e):
+    for j in range(1,i//2+1):
+        if i%j==0 and j*j==i:
+            l.append(i)
+            break
+print((",").join(map(str,l)))
+
+"""Description:-
+Write a function which can store the perfect square values in a list. The user will define the range.
+Sample input:
+1
+20
+Sample output:
+4,9,16
+"""
