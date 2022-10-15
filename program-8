@@ -1,0 +1,19 @@
+""" Description:-
+Define a function which can compute the sum of two numbers using recursion.
+sample input:
+4
+8
+Sample output:
+12
+"""
+Program:-
+def sum(a,b):
+    if b==0:
+        return a
+    elif b<0:
+        return sum(a-1,b+1)
+    else:
+        return sum(a+1,b-1)
+n1 = int(input())
+n2 = int(input())
+print(sum(n1,n2))
