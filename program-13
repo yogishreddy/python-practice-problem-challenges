@@ -1,0 +1,35 @@
+Program:-
+def stoi(n):
+    d={}
+    result=0
+    for i in range(10):
+        d.update({f'{i}':i})
+    for j in n:
+        result= result*10+d[j]
+    return result
+l=[]
+while True:
+    n1 = input()
+    n2 = input()
+    if n1=='-1' or n2=='-1':
+        break
+    else:
+        l.append(stoi(n1)+stoi(n2))
+if l==[]:
+    print("Invalid Input")
+else:
+    for i in l:
+        print(i)
+
+
+"""Description:-
+Define a function that can receive two integral numbers in string form and compute their sum and then print it in the console without using any predefined functions. 
+The user will give n values until and unless the user enters -1.
+Sample input:
+40
+15
+25
+-1
+Sample output:
+55
+""""
