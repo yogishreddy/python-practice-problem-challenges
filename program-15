@@ -1,0 +1,21 @@
+Program:-
+l=[]
+r=int(input())
+c=int(input())
+for i in range(r):
+    temp=[]
+    for j in range(c):
+        temp.append(i*j)
+    l.append(temp)
+print(l)
+
+"""Description:-
+Write a program which takes 2 digits, X,Y as input and generates a 2-dimensional array. 
+The element value in the i-th row and j-th column of the array should be i*j.
+Note: i=0,1.., X-1; j=0,1,¡¬Y-1.
+input
+3
+5
+output
+[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]
+"""
