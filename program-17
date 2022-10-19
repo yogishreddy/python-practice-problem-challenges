@@ -1,0 +1,18 @@
+Program:-
+def cap(n):
+    return n.lstrip().upper()
+    
+l = list(map(str,input().strip().split(",")))
+k=[]
+for i in l:
+    k.append(cap(i))
+print((" \n").join(k))
+    
+    
+"""Description:
+Write a program that accepts sequence of lines as input and prints the lines after making all characters in the sentence capitalized.
+input
+Hello world
+output
+HELLO WORLD
+"""
