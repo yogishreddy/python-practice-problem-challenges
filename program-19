@@ -1,0 +1,32 @@
+Program:-
+def evenlis(l,u):
+    if l>=1 and u<=5000:
+        result=[str(i) for i in range(l,u) if i%2==0][:4]
+        print((",").join(result))
+    else:
+        print("Invalid input")
+l=int(input())
+u = int(input())
+evenlis(l,u)
+
+"""Description:-
+Write a program, which will find all such numbers between the user-given range (both included) such that each digit of the number is an even number.
+The numbers obtained should be printed in a comma-separated sequence on a single line.
+Input Format:
+The first input consists of an integer type to get starting value.
+The second input consists of an integer type to get the ending value.
+Output Format:
+The output consists of all even digit numbers from the given range separated by a comma. If the range is out of bound, print "Invalid Input".
+Constraints:
+1>=n,m<=5000
+Sample Input 1:
+81
+101
+Sample Output 1:
+82,84,86,88
+Sample Input 2:
+1
+11
+SampleOutput 2:
+2,4,6,8
+"""
