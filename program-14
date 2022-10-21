@@ -1,0 +1,25 @@
+Program:-
+l=[]
+n=int(input())
+if n==-1:
+    print("Invalid Input")
+else:
+    l.append(n)
+    while True:
+        n = int(input())
+        if n==-1:
+            break
+        else:
+            l.append(n)
+for i in l:
+    i=f'{i}'
+    print(type(i),i)
+    
+"""Description:-
+Define a function that can convert an integer into a string and print it in the console without using predefined functions.
+The user will give n values until and unless the user enters -1.
+Sample input:
+6
+Sample output:
+<class 'str'> 6
+"""
