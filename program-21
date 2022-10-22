@@ -1,0 +1,24 @@
+Program:-
+def countul(sent):
+    u,l=0,0
+    for i in sent:
+        for j in i:
+            if j>='a' and j<='z':
+                l+=1
+            elif j>='A' and j<='Z':
+                u+=1
+    return u,l
+sent = list(map(str,input().split()))
+u,l=countul(sent)
+print("UPPER CASE {}".format(u))
+print("LOWER CASE {}".format(l))
+
+"""Description:-
+Write a program that accepts a sentence and calculate the number of upper case letters and lower case letters.
+Suppose the following input is supplied to the program:
+Sample input:
+Hello world!
+Sample output: 
+UPPER CASE 1
+LOWER CASE 9
+"""
