@@ -1,0 +1,29 @@
+Program:-
+#Python
+def diglet(sent):
+    d=0
+    l=0
+    for i in sent:
+        for j in i:
+            if (j >='a' and j<='z') or (j>='A' and j<='Z'):
+                l+=1
+            elif j>='0' and j<='9':
+                d+=1
+    print("LETTERS {}".format(l))
+    print("DIGITS {}".format(d))
+sent = list(map(str,input().split()))
+diglet(sent)
+
+"""Description:-
+Write a program that accepts a sentence and calculate the number of letters and digits.
+Suppose the following input is supplied to the program:
+Input Format:
+Input consists of a string. 
+Output Format: 
+The output consists of a calculation of number of digits and letters. 
+Sample Input: 
+hello world! 123
+Sample output:
+LETTERS 10
+DIGITS 3
+"""
